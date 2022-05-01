@@ -238,6 +238,24 @@ p{
     background-color: hsl(213, 19%, 18%); 
     border-radius: 20px;
   }
+  .container2 .items2{
+    position: absolute;
+    width: 90%;
+    height: 60%;
+    padding: 35px;
+    background-color: hsl(213, 19%, 18%); 
+    border-radius: 20px;
+    text-align: center;
+    }
+    h2{
+      color:hsl(0, 0%, 100%);
+      font-size: 30px;
+   }
+   
+   h3{
+      color:hsl(217, 12%, 63%);
+      font-size: 20px;
+   }
 
 } 
                 
