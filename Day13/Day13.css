@@ -1,0 +1,418 @@
+@import url(https://fonts.google.com/specimen/Manrope);
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Manrope';
+    margin: 0;
+    font-size: 15px;
+    font-weight: 600, 800;
+    background-color: hsl(230, 100%, 99%);
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+}
+
+.background2{
+    position: absolute;
+    top: 5%;
+    left: 50%;
+}
+
+h1{
+    position: absolute;
+    top: 14%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    color: hsl(227, 35%, 25%);
+    width: fit-content;
+}
+
+h2{
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    font-size: 15px;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    color: hsl(225, 20%, 60%);
+    width: fit-content;
+}
+
+.grid-container{
+    display: grid;
+    align-content: center;
+    position: absolute;
+    top: 46%;
+    left: 34%;
+    gap: 4px;
+    width: 35%; 
+}
+
+.First-container{
+    position: relative;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;  
+    height: 250px;
+    background-color: hsl(0, 0%, 100%);
+    border-top-right-radius: 13px;
+    border-top-left-radius: 13px;
+    box-shadow: rgba(0,0,0,0.12) 0px 1px 3px, rgba(0,0,0,0.24) 0px 1px 2px;
+}
+
+h3{
+    position: absolute;
+    left: 0;
+    margin-left: 40px;
+    margin-top: 50px;
+    color: hsl(225, 20%, 60%);
+    font-size: 15px;
+    
+}
+h4{
+    position: absolute;
+    right: 0;
+    margin-top: 50px;
+    margin-right: 80px;
+    font-size: 34px;
+    color: hsl(227, 35%, 25%);
+}
+.First-container> span{
+    position: absolute;
+    right: 0;
+    margin-top: 62px;
+    margin-right: 33px;
+    font-size: 15px;
+    color: hsl(225, 20%, 60%);
+}
+
+.Bar{
+    position: absolute;
+    width: 20rem;
+    left: 14%;
+    top: 50%;
+    margin-left: 10px;
+}
+
+.Slider {
+    position: relative;
+    -webkit-appearance: none;
+    cursor: pointer;
+    appearance: none;
+    width: 100%;
+    outline: none;
+    background-color: hsl(224, 65%, 95%);
+}
+
+.Slider::-webkit-slider-runnable-track{
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: hsl(224, 65%, 95%);
+      height: 7px; 
+      border-radius: 3px;
+      cursor: pointer;
+}
+
+.Slider::-moz-range-track{
+    background-color: hsl(224, 65%, 95%);
+    height: 10px;  
+
+}
+
+.Slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+       appearance: none;
+       cursor: pointer;
+       z-index: 3; 
+       position: relative;
+       background-color: hsl(174, 86%, 45%);
+       border-radius: 50%; 
+       background-image: url('interactive-pricing-component-main/images/icon-slider.svg');
+       background-repeat: no-repeat;
+       background-position: center;
+       width: 22px;
+       height: 13px;
+       fill:#80FFF3;
+       fill-rule: evenodd;
+       padding: 20px;
+       margin-top: -16px;
+}
+
+
+input[type="range"]:hover::-webkit-slider-thumb {
+    cursor: pointer;   
+}
+
+input[type="range"]:active::-webkit-slider-thumb{
+    cursor: grab;
+}
+
+.progressbar{
+    position: absolute;
+    top: 5.5px;
+    left: 0;
+    width: 0%;
+    height: 7px;
+    background-color:hsl(174, 77%, 80%);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.text{
+    position: absolute;
+    right: 56%;
+    bottom: 10%;
+    color: hsl(225, 20%, 60%);
+}
+.Monthly-billingToggle{
+    position: absolute;
+    right: 40%;
+    bottom: 9%;
+    width: 65px;
+    height: 30px;
+    background:hsl(223, 50%, 87%);
+    border-radius: 30px;
+    transition: 0.3s;
+}
+.Toggle-button{
+    position: absolute;
+    bottom: 5px;
+    width: 20px;
+    height: 20px;
+    background: hsl(0, 0%, 100%);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: 4px;
+}
+
+.Monthly-billingToggle.active .Toggle-button{
+    background: hsl(0, 0%, 100%);
+    position: absolute;
+    right: 6px;
+    bottom: 5px;
+}
+.Monthly-billingToggle.active{
+    background:  hsl(174, 77%, 80%);
+}
+
+.Yearly-billing{
+    position: absolute;
+    bottom: 10%;
+    right: 20%;
+    color: hsl(225, 20%, 60%);
+}
+
+.discount{
+    position: absolute;
+    background-color: hsl(14, 92%, 95%);
+    margin-left: 6px;
+    color: hsl(15, 100%, 70%);
+    font-size: 13px;
+    border-radius:  8px;  
+} 
+
+.Second-container{
+    position: relative;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 0;
+    height: 130px;
+    background-color: hsl(0, 0%, 100%);
+    border-bottom-right-radius: 13px;
+    border-bottom-left-radius: 13px;
+    box-shadow: rgba(0,0,0,0.12) 0px 1px 3px, rgba(0,0,0,0.24) 0px 1px 2px;
+    
+}
+.check1{
+    margin-left: 40px;
+    margin-top: 3%;
+}
+.check1> span{
+    margin-left: 7px;
+}
+
+
+.Trial{
+    position: absolute;
+    right: 25px;
+    top: 40%;
+    color: hsl(226, 100%, 87%);
+    background-color: hsl(227, 35%, 25%);
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: none;
+}
+
+/* RESPONSIVE STATES. MOBILE VIEW */
+
+@media screen {
+    
+}
+@media screen  and (max-width:390px) and (min-width:280px) {
+    .background2{
+        position: absolute;
+        top: 5%;
+        left: 34%;
+    }
+    
+    h1{
+        position: absolute;
+        top: 14%;
+        left: 50%;
+        text-align: center;
+        transform: translate(-50%, -50%);
+        color: hsl(227, 35%, 25%);
+        width: fit-content;
+        font-size: 25px;
+    }
+    
+    h2{
+        position: absolute;
+        top: 22%;
+        left: 50%;
+        font-size: 15px;
+        text-align: center;
+        transform: translate(-50%, -50%);
+        color: hsl(225, 20%, 60%);
+        width: fit-content;
+    }
+    
+    .grid-container{
+        display: grid;
+        align-content: center;
+        position: absolute;
+        top: 40%;
+        left: 3%;
+        gap: 4px;
+        width: 90%; 
+    }
+    
+    .First-container{
+        position: relative;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;  
+        height: 250px;
+        background-color: hsl(0, 0%, 100%);
+        border-top-right-radius: 13px;
+        border-top-left-radius: 13px;
+        /* box-shadow:yellow;
+        box-shadow: 6px; */
+
+    }
+    
+    h3{
+        position: absolute;
+        left: 20%;
+        margin-left: 40px;
+        margin-top: 50px;
+        color: hsl(225, 20%, 60%);
+        font-size: 15px;
+        text-align: center;
+        
+    }
+    h4{
+        position: absolute;
+        right: 20%;
+        bottom: 10%;
+        margin-top: 50px;
+        margin-right: 80px;
+        font-size: 34px;
+        color: hsl(227, 35%, 25%);
+    }
+
+    .First-container> span{
+        position: absolute;
+        right: 21%;
+        bottom: 32%;
+        margin-top: 62px;
+        margin-right: 33px;
+        font-size: 15px;
+        color: hsl(225, 20%, 60%);
+    }
+
+    .Bar{
+        position: absolute;
+        width: 20rem;
+        left: -1%;
+        top: 37%;
+        margin-left: 10px;
+    }
+    
+    .text{
+        position: absolute;
+        right: 64%;
+        bottom: 10%;
+        color: hsl(225, 20%, 60%);
+    }
+
+    .Monthly-billingToggle{
+        position: absolute;
+        right: 42%;
+        bottom: 9%;
+        width: 65px;
+        height: 30px;
+        background:hsl(223, 50%, 87%);
+        border-radius: 30px;
+        transition: 0.3s;
+    }
+
+    .Yearly-billing{
+        position: absolute;
+        bottom: 10%;
+        right: 13%;
+        color: hsl(225, 20%, 60%);
+    }
+    
+    .discount{
+        position: absolute;
+        background-color: hsl(14, 92%, 95%);
+        margin-left: 6px;
+        color: hsl(15, 100%, 70%);
+        font-size: 13px;
+        border-radius:  8px;
+    } 
+    .check1{
+        margin-left: 40px;
+        margin-top: 3%;
+        text-align: center;
+    }
+    .check1> span{
+        margin-left: 7px;
+    }
+    
+    
+    .Trial{
+        position: absolute;
+        right: 80px;
+        top: 70%;
+        color: hsl(226, 100%, 87%);;
+        background-color: hsl(227, 35%, 25%);
+        padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 30px;
+       border: none;
+        cursor: pointer;
+        text-align: center;
+    }
+}
