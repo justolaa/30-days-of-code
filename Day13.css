@@ -314,9 +314,6 @@ input[type="range"]:active::-webkit-slider-thumb{
         background-color: hsl(0, 0%, 100%);
         border-top-right-radius: 13px;
         border-top-left-radius: 13px;
-        /* box-shadow:yellow;
-        box-shadow: 6px; */
-
     }
     
     h3{

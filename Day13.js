@@ -6,7 +6,7 @@ let bills2 = document.querySelector("h3");
 let yearlybilling= document.querySelector(".Yearly-billing");
 let MonthlybillingToggle = document.querySelector(".Monthly-billingToggle");
 let discount = document.querySelector(".discount");
-let screenwidth = document.querySelector("body");
+
 
 slider.addEventListener('input', function () {
     progressbar.style.width = this.value + "rem"; 
@@ -88,13 +88,15 @@ function Animatedtoggle(){
          };};
 
 
-window.onresize = function () {
-    if (window.innerWidth <= 500) {
-        discount.innerHTML = "-25%";
-    }
-    else{
-        discount.innerHTML = "25%discount";
 
-    }
-}
 
+document.addEventListener("DOMContentLoaded", (e)=> {
+    window.onresize = function () {
+        if (window.innerWidth <= 500) {
+            discount.innerHTML = "-25%";
+        }
+        else{
+            discount.innerHTML = "25%discount";
+        }
+    }
+} )
