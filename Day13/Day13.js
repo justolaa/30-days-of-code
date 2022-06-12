@@ -92,11 +92,11 @@ function Animatedtoggle(){
 
 document.addEventListener("DOMContentLoaded", (e)=> {
     window.onresize = function () {
-        if (window.innerWidth <= 500) {
-            discount.innerHTML = "-25%";
+        if (window.outerWidth <= 500) {
+            discount.textContent = "-25%";
         }
         else{
-            discount.innerHTML = "25%discount";
+            discount.textContent = "25%discount";
         }
     }
 } )

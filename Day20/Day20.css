@@ -1,0 +1,284 @@
+@import url(https://fonts.google.com/specimen/League+Spartan);
+*{
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    background: hsl(222, 26%, 31%);
+    font-weight: 700;
+    font-family: 'league spartan';
+}
+
+.container{
+    position: absolute;
+    left: 39%;
+    top: 34%;
+    background-color: hsl(223, 31%, 20%);
+    width: 25%;
+    border-radius: 7px;
+}
+
+.text{
+    position: absolute;
+    left: 0%;
+    top: -43%;
+    font-size: 18px;
+    color: white;
+    font-weight: 700;
+}
+
+.Theme{
+    position: absolute;
+    left: 68%;
+    top: -40%;
+    font-size: 10px;
+    color: hsl(223, 50%, 87%);
+    font-weight: 700;
+}
+
+.Numbers{
+    display:inline-flex;
+    position: absolute;
+    height: 30px;
+    right:-1%;
+    top: -50%;
+    letter-spacing: 11px;
+    font-size: smaller;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.Toggle{
+    position: absolute;
+    right: 0%;
+    top: -43%;
+    width: 55px;
+    height: 22px;
+    background: hsl(223, 31%, 20%);
+    border-radius: 30px;
+    transition: 0.3s;
+    z-index: 0;
+}
+
+.Toggle-button{
+    position: absolute;
+    bottom: 5px;
+    width: 13px;
+    height: 13px;
+    background: hsl(6, 63%, 50%);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: 4px;
+}
+
+.Toggle-button.horizTranslate2{
+    transition: none;
+    transform: none;
+    -webkit-transition:-webkit-transform 0.1s linear; -webkit-transform: translateX(16.5px);
+    background-color: hsl(25, 98%, 40%);
+}
+
+.Toggle-button.horizTranslate3{
+    transition: none;
+    transform: none;
+    -webkit-transition:-webkit-transform 0.1s linear; -webkit-transform: translateX(33px); 
+    background-color:  hsl(176, 100%, 44%);
+}
+
+.Toggle-button.horizTranslate1{
+    transition: none;
+    transform: none;
+    -webkit-transition:-webkit-transform 0.1s linear; -webkit-transform: translateX(0px);
+    background-color: hsl(6, 63%, 50%);
+}
+
+.display{
+    height: 67px;
+    width: 100%;
+    background-color:hsl(224, 36%, 15%);
+    margin-top: -5em;
+    border-radius: 7px;
+    display: flex;
+    justify-content: end;
+}
+
+.content{
+    font-size: 32px;
+    line-height: 25px;
+    word-wrap: break-word;
+    word-break: break-all;
+    color: white;
+    font-weight: 700;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(4, 60px);
+    grid-gap: 1em;
+    grid-auto-rows: 37px;
+    padding: 2em;
+    padding-bottom: 1em;
+}
+
+button{
+    color: hsl(221, 14%, 31%);
+    background-color: white;
+    box-shadow: hsl(224, 28%, 35%);
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 7px;
+    padding: 7px;
+}
+
+button:hover{
+    cursor:pointer;
+}
+
+.Del{
+    background-color: hsl(225, 21%, 49%);
+    color: white;
+    font-size: 14px;
+}
+
+.Del:hover{
+    background-color: hsl(224, 28%, 35%);
+}
+
+.Reset{
+    grid-column: 1/3;
+    background-color: hsl(225, 21%, 49%);
+    color: white;
+    font-size: 14px;
+}
+
+.Reset:hover{
+    background-color: hsl(224, 28%, 35%);
+}
+
+.Equal{
+    grid-column: 3/5;
+    background-color: hsl(6, 63%, 50%);
+    color: white;
+    font-size: 14px;
+}
+
+.Equal:hover{
+    background-color: hsl(6, 70%, 34%);
+}
+
+
+/* THEME1 */
+body.body1{
+    background: hsl(222, 26%, 31%);
+}
+.Toggle.Toggle1{
+    background: hsl(223, 31%, 20%);
+}
+.container.container1{
+    background-color: hsl(223, 31%, 20%);
+}
+
+.Equal.Equal1{
+    background-color: hsl(6, 63%, 50%);
+}
+.Equal1:hover{
+    background-color: hsl(6, 70%, 34%) !important;
+}
+
+.Del.Del1{
+    background-color: hsl(225, 21%, 49%);
+}
+.Del1:hover{
+    background-color: hsl(224, 28%, 35%) !important;
+}
+.Reset.Reset1 {
+    background-color: hsl(225, 21%, 49%);
+}
+.Reset1:hover{
+    background-color: hsl(224, 28%, 35%) !important;
+}
+
+
+
+/* THEME2 */
+
+body.body2{
+    background: hsl(0, 0%, 90%);
+}
+.Toggle.Toggle2{
+    background: hsl(0, 5%, 81%);
+}
+.container.container2{
+    background-color: hsl(0, 5%, 81%);
+}
+
+.Equal.Equal2{
+    background-color: hsl(25, 98%, 40%);
+}
+.Equal2:hover{
+    background-color: hsl(25, 99%, 27%)!important;
+}
+.Del.Del2{
+    background-color: hsl(185, 42%, 37%);
+}
+.Del2:hover{
+   background-color:  hsl(185, 58%, 25%) !important;
+}
+.Reset.Reset2{
+    background-color: hsl(185, 42%, 37%) !important;
+}
+.Reset2:hover{
+    background-color: hsl(185, 58%, 25%) !important;
+}
+
+/* THEME 3 */
+
+body.body3{
+    background: hsl(268, 75%, 9%);
+}
+.Toggle.Toggle3{
+    background: hsl(268, 71%, 12%);
+}
+.container.container3{
+    background-color: hsl(268, 71%, 12%);
+}
+
+.Equal3:hover{
+   background-color: hsl(177, 92%, 70%) !important;
+}
+.Del.Del3{
+    background-color: hsl(268, 47%, 21%);
+}
+.Del3:hover{
+  background-color: hsl(285, 91%, 52%)!important;
+}
+.Reset.Reset3{
+    background-color: hsl(268, 47%, 21%);
+}
+.Reset3:hover{
+    background-color: hsl(285, 91%, 52%)!important;
+}
+
+/* MEDIA QUERIES */
+@media screen {
+    
+}
+@media screen and (max-width: 380px) and (min-width: 200px){
+    .container{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 390px) and (min-width: 381px){
+    .container{
+        width: 90%;
+    }
+}
