@@ -1,0 +1,305 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(/project/Fikayo/annie-spratt-OPSus5S_6rc-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    backdrop-filter:blur(2.9px);
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    grid-auto-rows: minmax(auto);
+    margin-right: 18.9%;
+}
+
+.image1{
+    background-image: url(/project/Fikayo/IMG_20180611_153118_425.JPG);
+    width: 270px;
+    height: 250px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover; 
+    justify-self: end;
+    margin-top: 16%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+.carousel{
+    position: absolute;
+    top: 4%;
+    left: 28%;
+    width: 450px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+}
+
+.container2{
+   position: absolute;
+   width: 26%;
+   height: 33%;
+   left: 61.5%;
+   top: 70%;
+   /* background-color: pink; */
+}
+
+.quote{
+    font-size: 22px;
+    display: flex;
+    justify-content: start;
+    color: black;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+.Author{
+    font-size: 15px;
+    color: black;
+    font-weight: 500;
+    display: flex;
+    justify-content: end;
+    height: 35px;
+    align-items: end;
+}
+
+.rounded-circle{
+    cursor: pointer;
+    position: relative;
+    left: 36%;
+    bottom: 5%;
+    height: 50px;
+    width: 50px;
+    border: 2px solid;
+    border-color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rounded-circle::before{
+    content: "";
+    position: absolute;
+    background-color: pink;
+    padding: 50%;
+    border-radius: 50%;
+    opacity: 0;
+    transition: transform 1s, opacity 3s;
+    
+}
+
+.rounded-circle:active::before{
+    transition: 0s;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(0);
+}
+
+hr{
+    border-radius: 3px solid;
+    border-color: black;
+    position: relative;
+    bottom: 9%;
+}
+
+.click{
+    position: absolute;
+    left: 53%;
+    bottom: 27%;
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+}
+
+@media screen {
+    
+}
+@media screen and (max-width: 1024px) and (min-width: 800px){
+    
+    
+}
+@media screen and (max-width: 380px) and (min-width: 200px){
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        grid-auto-rows: minmax(auto);
+        margin: 0%;
+    }
+    
+    .image1{
+        background-image: url(/project/Fikayo/IMG_20180611_153118_425.JPG);
+        width: 140px;
+        height: 120px;
+        overflow: hidden;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:cover; 
+        justify-self: end;
+        margin-top: 36%;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        margin-right: 0%;
+    }
+    
+    
+    .carousel{
+        position: absolute;
+        top: 15%;
+        left: 1%;
+        width: 225px;
+        height: 225px;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+    }
+    .container2{
+        position: absolute;
+        width: 30%;
+        height: 33%;
+        left: 61.5%;
+        top: 39%;
+        /* background-color: pink; */
+     }
+     
+     .quote{
+         font-size: 15px;
+         display: flex;
+         justify-content: start;
+         color: black;
+         font-weight: 500;
+         line-height: 18px;
+     }
+     
+     .Author{
+         font-size: 15px;
+         color: black;
+         font-weight: 500;
+         display: flex;
+         justify-content: end;
+         height: 35px;
+         align-items: end;
+     }
+     
+     .rounded-circle{
+         cursor: pointer;
+         position: relative;
+         left: 36%;
+         bottom: 5%;
+         height: 40px;
+         width: 40px;
+         border: 2px solid;
+         border-color:white;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+     }
+
+     hr{
+        border-radius: 3px solid;
+        border-color: black;
+        position: relative;
+        bottom: 6%;
+    }
+    
+    .click{
+        position: absolute;
+        left: 70%;
+        bottom: 23%;
+        font-size: 15px;
+        font-weight: 600;
+        color: black;
+    }
+    
+}
+
+@media screen and (max-width: 390px) and (min-width: 381px){
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        grid-auto-rows: minmax(auto);
+        margin: 0%;
+    }
+    
+    .image1{
+        background-image: url(/project/Fikayo/IMG_20180611_153118_425.JPG);
+        width: 140px;
+        height: 120px;
+        overflow: hidden;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:cover; 
+        justify-self: end;
+        margin-top: 36%;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        margin-right: 2.7%;
+    }
+    
+    
+    .carousel{
+        position: absolute;
+        top: 15%;
+        left: 3%;
+        width: 225px;
+        height: 225px;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+    }
+    .container2{
+        position: absolute;
+        width: 30%;
+        height: 33%;
+        left: 61.5%;
+        top: 35%;
+        /* background-color: pink; */
+     }
+     
+     .quote{
+         font-size: 15px;
+         display: flex;
+         justify-content: start;
+         color: black;
+         font-weight: 500;
+         line-height: 18px;
+     }
+     
+     .Author{
+         font-size: 15px;
+         color: black;
+         font-weight: 500;
+         display: flex;
+         justify-content: end;
+         height: 35px;
+         align-items: end;
+     }
+     
+     .rounded-circle{
+         cursor: pointer;
+         position: relative;
+         left: 36%;
+         bottom: 5%;
+         height: 40px;
+         width: 40px;
+         border: 2px solid;
+         border-color:white;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+     }
+
+     hr{
+        border-radius: 3px solid;
+        border-color: black;
+        position: relative;
+        bottom: 6%;
+    }
+    
+    .click{
+        position: absolute;
+        left: 70%;
+        bottom: 40%;
+        font-size: 15px;
+        font-weight: 600;
+        color: black;
+    }
+   
+}
