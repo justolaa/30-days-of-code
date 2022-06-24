@@ -7,7 +7,7 @@ body{
     background-image: url(/project/Fikayo/annie-spratt-OPSus5S_6rc-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    overflow: hidden;
+    overflow-y: scroll;
     backdrop-filter:blur(2.9px);
 }
 
@@ -206,10 +206,10 @@ hr{
 
     .container2{
         position: absolute;
-        width: 54%;
+        width: 63%;
         height: 33%;
-        left: 44.7%;
-        top: 81.7%;
+        left: 36%;
+        top: 81.3%;
      }
      
      .quote{
@@ -234,12 +234,13 @@ hr{
          font-family:Georgia, 'Times New Roman', Times, serif;
         
      }
-     
+     .contain{
+        position: absolute;
+        left: -46%;
+        top: 10%;
+     }
      .rounded-circle{
          cursor: pointer;
-         position: relative;
-         left: 58%;
-         top: -85%;
          height: 40px;
          width: 40px;
          border: 2px solid;
@@ -331,12 +332,17 @@ hr{
          font-family:Georgia, 'Times New Roman', Times, serif;
         
      }
+     .contain{
+        position: absolute;
+        left: -40%;
+        top: 10%;
+     }
      
      .rounded-circle{
          cursor: pointer;
          position: relative;
-         left: 58%;
-         top: -75%;
+         left: -51%;
+         top: -29%;
          height: 40px;
          width: 40px;
          border: 2px solid;
