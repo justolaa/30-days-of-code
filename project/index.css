@@ -45,7 +45,7 @@ body{
    width: 26%;
    height: 33%;
    left: 61.5%;
-   top: 70%;
+   top: 67%;
    /* background-color: pink; */
 }
 
@@ -54,18 +54,20 @@ body{
     display: flex;
     justify-content: start;
     color: black;
-    font-weight: 500;
+    font-weight: 450;
     line-height: 25px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .Author{
-    font-size: 15px;
+    font-size: 17px;
     color: black;
     font-weight: 500;
     display: flex;
     justify-content: end;
     height: 35px;
     align-items: end;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 .rounded-circle{
@@ -108,7 +110,7 @@ hr{
 
 .click{
     position: absolute;
-    left: 53%;
+    left: 110%;
     bottom: 27%;
     font-size: 20px;
     font-weight: 600;
@@ -119,47 +121,95 @@ hr{
     
 }
 @media screen and (max-width: 1024px) and (min-width: 800px){
-    
-    
-}
-@media screen and (max-width: 380px) and (min-width: 200px){
     .grid-container{
-        display: grid;
-        grid-template-columns: repeat(1, auto);
-        grid-auto-rows: minmax(auto);
+        display: flex;
         margin: 0%;
+        height: 100vh;
+        position: relative;
+        justify-content: center;
     }
-    
+
+    .carousel{
+        position: absolute;
+        left: 14%;
+        width: 450px;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+    }
+
     .image1{
         background-image: url(/project/Fikayo/IMG_20180611_153118_425.JPG);
-        width: 140px;
-        height: 120px;
+        width: 270px;
+        height: 250px;
         overflow: hidden;
         background-repeat: no-repeat;
         background-position: center;
         background-size:cover; 
         justify-self: end;
-        margin-top: 36%;
+        margin-top: 16%;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-        margin-right: 0%;
+        position: absolute;
+        right: 14%;
+    }
+
+    .container2{
+        position: absolute;
+        width: 26%;
+        height: 33%;
+        left: 60%;
+        top: 43%;
+        /* background-color: pink; */
+     }
+
+     hr{
+        border-radius: 3px solid;
+        border-color: black;
+        position: relative;
+        bottom: 5%;
+    }
+    
+    
+}
+@media screen and (max-width: 380px) and (min-width: 200px){
+    .grid-container{
+        display: flex;
+        margin: 0%;
+        height: 100vh;
+        position: relative;
+        justify-content: center;
+    }
+    
+    .image1{
+        background-image: url(/project/Fikayo/IMG_20180611_153118_425.JPG);
+        width: 200px;
+        height: 170px;
+        overflow: hidden;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:cover; 
+        justify-self: end;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        margin-right: 2.7%;
+        align-self: center;
+        position: absolute;
+        margin-top: 63%;
+        
     }
     
     
     .carousel{
         position: absolute;
-        top: 15%;
-        left: 1%;
-        width: 225px;
-        height: 225px;
+        left: 14%;
+        margin-top: -4%;
+        width: 260px;
         box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
     }
+
     .container2{
         position: absolute;
-        width: 30%;
+        width: 54%;
         height: 33%;
-        left: 61.5%;
-        top: 39%;
-        /* background-color: pink; */
+        left: 44.7%;
+        top: 81.7%;
      }
      
      .quote{
@@ -167,25 +217,29 @@ hr{
          display: flex;
          justify-content: start;
          color: black;
-         font-weight: 500;
-         line-height: 18px;
+         font-weight: 450;
+         line-height: 16px;
+         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+         
      }
      
      .Author{
-         font-size: 15px;
+         font-size: 16px;
          color: black;
          font-weight: 500;
          display: flex;
          justify-content: end;
          height: 35px;
          align-items: end;
+         font-family:Georgia, 'Times New Roman', Times, serif;
+        
      }
      
      .rounded-circle{
          cursor: pointer;
          position: relative;
-         left: 36%;
-         bottom: 5%;
+         left: 58%;
+         top: -85%;
          height: 40px;
          width: 40px;
          border: 2px solid;
@@ -204,9 +258,9 @@ hr{
     
     .click{
         position: absolute;
-        left: 70%;
-        bottom: 23%;
-        font-size: 15px;
+        left: 120%;
+        bottom: 0%;
+        font-size: 18px;
         font-weight: 600;
         color: black;
     }
@@ -215,16 +269,17 @@ hr{
 
 @media screen and (max-width: 390px) and (min-width: 381px){
     .grid-container{
-        display: grid;
-        grid-template-columns: repeat(1, auto);
-        grid-auto-rows: minmax(auto);
+        display: flex;
         margin: 0%;
+        height: 100vh;
+        position: relative;
+        justify-content: center;
     }
     
     .image1{
         background-image: url(/project/Fikayo/IMG_20180611_153118_425.JPG);
-        width: 140px;
-        height: 120px;
+        width: 190px;
+        height: 190px;
         overflow: hidden;
         background-repeat: no-repeat;
         background-position: center;
@@ -233,24 +288,25 @@ hr{
         margin-top: 36%;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         margin-right: 2.7%;
+        align-self: center;
+        position: absolute;
+        margin-top: 47%;
     }
     
     
     .carousel{
         position: absolute;
-        top: 15%;
-        left: 3%;
-        width: 225px;
-        height: 225px;
+        left: 14%;
+        width: 280px;
         box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
     }
+
     .container2{
         position: absolute;
-        width: 30%;
+        width: 50%;
         height: 33%;
-        left: 61.5%;
-        top: 35%;
-        /* background-color: pink; */
+        left: 48%;
+        top: 73%;
      }
      
      .quote{
@@ -258,25 +314,29 @@ hr{
          display: flex;
          justify-content: start;
          color: black;
-         font-weight: 500;
+         font-weight: 450;
          line-height: 18px;
+         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+         
      }
      
      .Author{
-         font-size: 15px;
+         font-size: 16px;
          color: black;
          font-weight: 500;
          display: flex;
          justify-content: end;
          height: 35px;
          align-items: end;
+         font-family:Georgia, 'Times New Roman', Times, serif;
+        
      }
      
      .rounded-circle{
          cursor: pointer;
          position: relative;
-         left: 36%;
-         bottom: 5%;
+         left: 58%;
+         top: -75%;
          height: 40px;
          width: 40px;
          border: 2px solid;
@@ -295,11 +355,10 @@ hr{
     
     .click{
         position: absolute;
-        left: 70%;
-        bottom: 40%;
-        font-size: 15px;
+        left: 120%;
+        bottom: 0%;
+        font-size: 18px;
         font-weight: 600;
         color: black;
     }
-   
 }
