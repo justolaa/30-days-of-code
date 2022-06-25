@@ -195,7 +195,7 @@ hr{
         margin-right: 2.7%;
         align-self: center;
         position: absolute;
-        margin-top: 54%;
+        margin-top: 53%;
         
     }
     
@@ -213,7 +213,7 @@ hr{
         width: 63%;
         height: 33%;
         left: 36%;
-        top: 78%;
+        top: 75%;
      }
      
      .quote{
@@ -228,7 +228,7 @@ hr{
      }
      
      .Author{
-         font-size: 15.7px;
+         font-size: 15px;
          color: black;
          font-weight: 500;
          display: flex;
