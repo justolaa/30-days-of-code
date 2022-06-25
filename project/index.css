@@ -8,6 +8,9 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
     overflow-y: scroll;
     backdrop-filter:blur(2.9px);
 }
