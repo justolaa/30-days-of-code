@@ -9,7 +9,6 @@ body{
     background-size: cover;
     overflow-y: scroll;
     backdrop-filter:blur(2.9px);
-    background-attachment: fixed;
 }
 
 .grid-container{
