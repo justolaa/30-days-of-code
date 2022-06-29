@@ -26,7 +26,7 @@ function Button() {
                 document.querySelector('.quote').innerHTML= data.title;
             }
 
-            if (data.author == UNKNOWN) {
+            if (data.author === "unknown") {
                 document.querySelector('.Author').innerHTML= "Someones Son";
             }
 
