@@ -6,8 +6,12 @@ body{
     width: 100vw;
     background-image: url(/project/Fikayo/annie-spratt-OPSus5S_6rc-unsplash.jpg);
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
-    overflow-y: scroll;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    overflow: hidden;
     backdrop-filter:blur(2.9px);
 }
 
@@ -16,6 +20,30 @@ body{
     grid-template-columns: repeat(1, auto);
     grid-auto-rows: minmax(auto);
     margin-right: 18.9%;
+}
+
+a{
+    font-size: 18px;
+ color: black;
+ display: flex;
+ justify-content: end;
+ 
+}
+
+a:hover{
+    color: black;
+    text-decoration: none;
+}
+
+.first
+{
+    color: burlywood;
+    justify-content: start;
+}
+
+.first:hover
+{
+    color: burlywood;
 }
 
 .image1{
@@ -82,6 +110,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 }
 
 .rounded-circle::before{
@@ -191,7 +220,7 @@ hr{
         margin-right: 2.7%;
         align-self: center;
         position: absolute;
-        margin-top: 63%;
+        margin-top: 53%;
         
     }
     
@@ -209,22 +238,22 @@ hr{
         width: 63%;
         height: 33%;
         left: 36%;
-        top: 81.3%;
+        top: 75.6%;
      }
      
      .quote{
-         font-size: 15px;
+         font-size: 14px;
          display: flex;
          justify-content: start;
          color: black;
          font-weight: 450;
-         line-height: 16px;
+         line-height: 15px;
          font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
          
      }
      
      .Author{
-         font-size: 16px;
+         font-size: 15px;
          color: black;
          font-weight: 500;
          display: flex;
@@ -263,7 +292,11 @@ hr{
         bottom: 0%;
         font-size: 18px;
         font-weight: 600;
-        color: black;
+        color: white;
+    }
+    
+    a{
+        font-size: 16px;
     }
     
 }
@@ -318,6 +351,7 @@ hr{
          font-weight: 450;
          line-height: 18px;
          font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+         transition: 1ms;
          
      }
      
@@ -366,5 +400,8 @@ hr{
         font-size: 18px;
         font-weight: 600;
         color: black;
+    }
+    a{
+        font-size: 16px;
     }
 }

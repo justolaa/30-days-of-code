@@ -16,12 +16,26 @@ function Button() {
             console.log(data);
     
             });
-            document.querySelector('.quote').innerHTML= data.quote
+
+            try {
+                document.querySelector('.quote').innerHTML= data.quote
             document.querySelector('.Author').innerHTML= data.author
             console.log(data);
+
+            if (data.title ) {
+                document.querySelector('.quote').innerHTML= data.title;
+            }
+
+            if (data.author == UNKNOWN) {
+                document.querySelector('.Author').innerHTML= "Someones Son";
+            }
+
+            } catch (error) {
+                document.querySelector('.quote').innerHTML= "Server Error. Click Again Adefikayo!"
+            }
+            
             
     })
-    .catch(err => console.error(err));
 }
 
 
